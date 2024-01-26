@@ -1,8 +1,8 @@
-function Login() {
+function SignupPage() {
     return (
         <div>
 
         </div>
     );
 }
-export default Login;
+export default SignupPage;

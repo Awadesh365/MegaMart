@@ -9,21 +9,21 @@ import {
   RouterProvider,
   Route,
   Link,
-} from 'react-router-dom';
+} from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home></Home>,
+    path: "/",
+    element: (<Home></Home>),
   },
   {
-    path: '/login',
+    path: "/login",
     element: <LoginPage></LoginPage>,
   },
   {
-    path: '/signup',
+    path: "/signup",
     element: <SignupPage></SignupPage>,
-  },
+  }
 ]);
 
 function App() {

@@ -185,10 +185,10 @@ function NavBar({ children }) {
                         className="h-6 w-6"
                         aria-hidden="true"
                       />
-                    
+
                     </button>
                     <span className="inline-flex items-center rounded-md bg-red-50 mb-7 -ml-3 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
-                        3
+                      3
                     </span>
                   </div>
                   <div className="mt-3 space-y-1 px-2">
@@ -212,7 +212,7 @@ function NavBar({ children }) {
         <header className="bg-white shadow">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-              E-Commerce
+              MegaMart
             </h1>
           </div>
         </header>

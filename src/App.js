@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import CartPage from './pages/CartPage';
 
 import {
   createBrowserRouter,
@@ -10,6 +11,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -21,9 +23,14 @@ const router = createBrowserRouter([
     element: <LoginPage></LoginPage>,
   },
   {
-    path: "/signup",
-    element: <SignupPage></SignupPage>,
-  }
+    path: "signup",
+    element: <SignupPage></SignupPage>
+  },
+  // for testing
+  {
+    path: "cart",
+    element: <CartPage></CartPage>,
+  },
 ]);
 
 function App() {

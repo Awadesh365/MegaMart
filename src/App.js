@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
-import ProductDetailPage from './features/product-list/components/ProductDetail';
+import ProductDetailPage from './features/product/components/ProductDetail';
 
 import {
   createBrowserRouter,

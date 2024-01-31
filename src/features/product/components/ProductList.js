@@ -66,36 +66,59 @@ function classNames(...classes) {
 
 const products = [
   {
-    id: 1,
+    id: 0,
     name: 'Basic Tee',
     href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+  },
+  {
+    id: 1,
+    name: 'Earthen Bottle',
+    href: '#',
+    price: '$48',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
+    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
   },
   {
     id: 2,
-    name: 'Basic Tee',
+    name: 'Nomad Tumbler',
     href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
-    color: 'Black',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
+    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
   },
   {
     id: 3,
-    name: 'Basic Tee',
+    name: 'Focus Paper Refill',
     href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    price: '$89',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
-];
+  {
+    id: 4,
+    name: 'Machined Mechanical Pencil',
+    href: '#',
+    price: '$35',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
+    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  // More products...
+]
+
+function getRandomColor() {
+  const colors = ['Black', 'White', 'Blue', 'Red', 'Green'];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function getRandomPrice() {
+  return Math.floor(Math.random() * 50) + 30; // Generating random price between $30 and $80
+}
+
+
 
 export default function ProductList() {
   const count = useSelector(selectCount);

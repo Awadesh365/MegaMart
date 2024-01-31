@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, incrementAsync, selectCount } from './productListSlice';
+import { increment, incrementAsync, selectCount } from '../productSlice';
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
@@ -445,7 +445,7 @@ export default function ProductList() {
                   >
                     2
                   </a>
-                
+
                   <a
                     href="#"
                     className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"

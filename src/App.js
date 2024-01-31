@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import ProductDetail from './features/product-list/components/ProductDetail';
 
 import {
   createBrowserRouter,
@@ -34,7 +35,12 @@ const router = createBrowserRouter([
   {
     path: '/checkout',
     element: <Checkout></Checkout>,
+  },
+  {
+    path: '/product-detail',
+    element: <ProductDetail></ProductDetail>
   }
+
 ]);
 
 function App() {

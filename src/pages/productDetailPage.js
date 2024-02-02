@@ -1,7 +1,6 @@
 import NavBar from "../features/navbar/Navbar";
-import ProductDetail from "../features/product/components/ProductList";
-
-function Home() {
+import ProductDetail from "../features/product/components/ProductDetail";
+function ProductDetailPage() {
     return (
         <div>
             <NavBar>
@@ -11,4 +10,4 @@ function Home() {
     );
 }
 
-export default ProductDetail;
+export default ProductDetailPage;

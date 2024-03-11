@@ -27,16 +27,16 @@ const router = createBrowserRouter([
     path: '/signup',
     element: <SignupPage></SignupPage>,
   },
-  { 
+  {
     path: '/cart',
     element: <CartPage></CartPage>,
   },
-  { 
+  {
     path: '/checkout',
     element: <Checkout></Checkout>,
   },
-  { 
-    path: '/product-detail',
+  {
+    path: '/product-detail/:id',
     element: <ProductDetailPage></ProductDetailPage>,
   },
 ]);

@@ -1,15 +1,19 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      gridTemplateRows: {
-        '[auto,auto,1fr]': 'auto auto 1fr',
-      },
+      fontFamily: {
+        Poppins: ['Poppins', 'sans- serif'],
+        Mont: ['Montserrat', 'sans - serif']
+      }
     },
   },
-  plugins: [require('@tailwindcss/aspect-ratio'),require('@tailwindcss/forms')],
-}
-
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+})

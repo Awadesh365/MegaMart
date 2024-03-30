@@ -1,0 +1,18 @@
+{
+  "name": "ecommerce-platform",
+  "version": "1.0.0",
+  "description": "MEGA-MART is a cutting-edge e-commerce platform designed to **elevate online shopping experiences** through **seamless transactions and efficient management**. Leveraging a **powerful tech stack** and a host of advanced features, MEGA-MART empowers businesses and customers alike.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

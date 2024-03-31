@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Search from "../search/Search";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Signin from "../authButton/Signin";
+import SigninButton from "../authButton/SigninButton";
 
 import {
   Drawer,
@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Signin></Signin>
+      <SigninButton></SigninButton>
 
       <nav
         className={`flex flex-row items-center justify-between font-Poppins h-[60px] md:h-[100px] md:px-24 w-full px-4 mx-auto md:w-full py-4 bg-[#fff] z-[42] sticky top-0 ${

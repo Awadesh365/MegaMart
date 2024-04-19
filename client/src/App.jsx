@@ -30,15 +30,20 @@ function App() {
   }, []);
 
   // Check if the current path is not "/sign-in"
-  const isNotSignInPath = location.pathname !== "/sign-in";
+  const isNotSignInPath =
+    location.pathname !== "/sign-in" && location.pathname !== "/sign-in/";
+  // Check if the current path is not "/sign-up"
+  const IsNotSignUpPath =
+    location.pathname !== "/sign-up" && location.pathname !== "/sign-up/";
 
   return (
     <main>
       <ScrollToTop />
-      {isNotSignInPath && user && <Navbar />}
+      {isNotSignInPath && IsNotSignUpPath && user && <Navbar />}
       <Routes>
         <Route path="/" element={user && <Home />} />
         <Route path="/sign-in" element={user && <SignIn />} />
+        <Route path="/sign-up" element={user && <SignIn />} />
         <Route path="/laptops" element={user && <LaptopPage />} />
         <Route path="/mobiles" element={user && <MobilePage />} />
         <Route path="/mens" element={user && <MensPage />} />
